@@ -5,4 +5,9 @@
 //  Created by Sanjay Goswami on 26/12/23.
 //
 
-import Foundation
+
+struct TodoItem: Codable {
+    var task: String
+    var isActive = false
+    var time = 0.0
+}

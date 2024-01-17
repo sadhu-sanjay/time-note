@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E320AE342B3B43CE0016720D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E320AE332B3B43CE0016720D /* TodoItem.swift */; };
 		E3A025752B3558A60049C625 /* Time_NoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A025742B3558A60049C625 /* Time_NoteApp.swift */; };
 		E3A025772B3558A60049C625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A025762B3558A60049C625 /* ContentView.swift */; };
 		E3A025792B3558A90049C625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A025782B3558A90049C625 /* Assets.xcassets */; };
 		E3A0257D2B3558A90049C625 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A0257C2B3558A90049C625 /* Preview Assets.xcassets */; };
+		E3A025852B355A330049C625 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A025842B355A330049C625 /* ClockView.swift */; };
+		E3A025872B355C6C0049C625 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A025862B355C6C0049C625 /* ClockModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E320AE332B3B43CE0016720D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		E3A025712B3558A60049C625 /* Time Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A025742B3558A60049C625 /* Time_NoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_NoteApp.swift; sourceTree = "<group>"; };
 		E3A025762B3558A60049C625 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E3A025782B3558A90049C625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A0257A2B3558A90049C625 /* Time_Note.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time_Note.entitlements; sourceTree = "<group>"; };
 		E3A0257C2B3558A90049C625 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3A025842B355A330049C625 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		E3A025862B355C6C0049C625 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E320AE322B3B43A50016720D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E320AE332B3B43CE0016720D /* TodoItem.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		E3A025682B3558A60049C625 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +66,8 @@
 		E3A025732B3558A60049C625 /* Time Note */ = {
 			isa = PBXGroup;
 			children = (
+				E320AE322B3B43A50016720D /* models */,
+				E3A025832B355A1A0049C625 /* Clock */,
 				E3A025742B3558A60049C625 /* Time_NoteApp.swift */,
 				E3A025762B3558A60049C625 /* ContentView.swift */,
 				E3A025782B3558A90049C625 /* Assets.xcassets */,
@@ -67,6 +83,15 @@
 				E3A0257C2B3558A90049C625 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3A025832B355A1A0049C625 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				E3A025842B355A330049C625 /* ClockView.swift */,
+				E3A025862B355C6C0049C625 /* ClockModel.swift */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E320AE342B3B43CE0016720D /* TodoItem.swift in Sources */,
+				E3A025872B355C6C0049C625 /* ClockModel.swift in Sources */,
 				E3A025772B3558A60049C625 /* ContentView.swift in Sources */,
+				E3A025852B355A330049C625 /* ClockView.swift in Sources */,
 				E3A025752B3558A60049C625 /* Time_NoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
